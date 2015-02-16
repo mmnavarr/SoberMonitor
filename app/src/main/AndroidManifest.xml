@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cyberplays.sobermonitor" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SelectActivity"
+            android:label="@string/title_activity_select"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".InfoActivity"
+            android:label="@string/title_activity_info"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SelectListActivity"
+            android:label="@string/title_list"
+            android:parentActivityName=".SelectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SelectRandomActivity"
+            android:label="@string/numbersel"
+            android:parentActivityName=".SelectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>
