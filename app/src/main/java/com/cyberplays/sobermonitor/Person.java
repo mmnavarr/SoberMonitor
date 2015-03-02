@@ -14,14 +14,14 @@ public class Person {
             mult = m;
     }
 
-    void setName(String n) {
+    protected void setName(String n) {
         name = n;
     }
     String getName() {
         return name;
     }
 
-    void setMult(int m){
+    protected void setMult(int m){
         mult = m;
     }
     int getMult() {

@@ -14,7 +14,7 @@
     <string name="title_activity_info">Information</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_select_list">SelectListActivity</string>
-    <string name="title_activity_select_random">SelectRandomActivity</string>
+    <string name="title_activity_select_random">Select Random Number</string>
     <string name="coming_soon">Coming Soon!</string>
     <string name="select">Select</string>
 
@@ -24,7 +24,8 @@
     <string name="dummymult">x4</string>
 
     <string name="number">0</string>
-    <string name="range">Range</string>
-    <string name="numbersel">Select Number</string>
+    <string name="range">RANGE</string>
+    <string name="numbersel">SELECT</string>
+    <string name="dialogheader">Enter Range for Selection</string>
 
 </resources>

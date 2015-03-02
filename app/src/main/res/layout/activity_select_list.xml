@@ -3,26 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     tools:context="com.cyberplays.sobermonitor.SelectListActivity"
     android:background="@color/background_material_dark">
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/select"
-        android:id="@+id/button"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true" />
 
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button" />
+        android:layout_above="@+id/button"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp" />
 
     <at.markushi.ui.CircleButton
         android:layout_width="70dip"
@@ -31,7 +22,18 @@
         app:cb_color="#33CCFF"
         app:cb_pressedRingWidth="8dip"
         android:id="@+id/add"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/button"
         android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="#33CCFF"
+        android:textColor="#ffffffff" />
 
 </RelativeLayout>
