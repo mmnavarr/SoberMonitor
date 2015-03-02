@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/dialog_addperson_header"
+        android:id="@+id/dialog_getrange_header"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:background="#33CCFF"
+        android:textColor="#ffffffff" />
+
+    <EditText
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/dialog_addperson_getname"
+        android:textAlignment="center"
+        android:numeric="integer"
+        android:typeface="normal"
+        android:hint="Joe Shmo"
+        android:layout_marginEnd="53dp"
+        android:layout_alignTop="@+id/dialog_addperson_name"
+        android:layout_alignParentEnd="true"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dialog_addperson_name"
+        android:id="@+id/dialog_addperson_name"
+        android:layout_marginTop="34dp"
+        android:textColor="#ff000000"
+        android:textSize="16sp"
+        android:paddingTop="5dp"
+        android:paddingRight="17dp"
+        android:layout_below="@+id/dialog_getrange_header"
+        android:layout_toStartOf="@+id/dialog_addperson_getname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dialog_addperson_mult"
+        android:id="@+id/dialog_addperson_mult"
+        android:layout_marginTop="29dp"
+        android:textColor="#ff000000"
+        android:textSize="16sp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/dialog_addperson_getname"
+        android:layout_alignStart="@+id/dialog_addperson_name" />
+
+    <EditText
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/dialog_addperson_getmult"
+        android:layout_alignTop="@+id/dialog_addperson_mult"
+        android:layout_alignStart="@+id/dialog_addperson_getname"
+        android:hint="1"
+        android:gravity="center" />
+</RelativeLayout>

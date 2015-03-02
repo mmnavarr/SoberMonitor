@@ -26,6 +26,10 @@
     <string name="number">0</string>
     <string name="range">RANGE</string>
     <string name="numbersel">SELECT</string>
-    <string name="dialogheader">Enter Range for Selection</string>
+    <string name="dialog_getrange_header">Enter Range for Selection</string>
+
+    <string name="dialog_addperson_header">Add a person</string>
+    <string name="dialog_addperson_name">NAME:</string>
+    <string name="dialog_addperson_mult">MULT:</string>
 
 </resources>

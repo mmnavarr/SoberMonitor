@@ -75,8 +75,8 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 //Log.d("Button DEBUG", "b3");
-                Intent i = new Intent(MainActivity.this, SelectActivity.class);
-                startActivity(i);
+                //Intent i = new Intent(MainActivity.this, SelectActivity.class);
+                //startActivity(i);
             }
         });
         bl3 = (TextView) findViewById(R.id.bl3);

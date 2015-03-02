@@ -10,26 +10,17 @@
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="5dp" />
-
-    <at.markushi.ui.CircleButton
-        android:layout_width="70dip"
-        android:layout_height="70dip"
-        android:src="@drawable/plus"
-        app:cb_color="#33CCFF"
-        app:cb_pressedRingWidth="8dip"
-        android:id="@+id/add"
-        android:layout_above="@+id/button"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/selectfromlist" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/select"
-        android:id="@+id/button"
+        android:id="@+id/selectfromlist"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
