@@ -12,13 +12,11 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true">
-
-        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_getrange_header"
+            android:id="@+id/infotext" />
     </ScrollView>
 
 </RelativeLayout>
