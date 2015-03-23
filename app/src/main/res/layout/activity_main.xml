@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity"
-    android:background="@color/hint_foreground_material_dark">
+    android:background="@color/hint_foreground_material_dark"
+    android:id="@+id/main">
 
     <TextView
         android:layout_width="wrap_content"
@@ -41,7 +42,7 @@
     <at.markushi.ui.CircleButton
         android:layout_width="100dip"
         android:layout_height="100dip"
-        android:src="@drawable/ic_action"
+        android:src="@drawable/mug_final"
         app:cb_color="#33CCFF"
         app:cb_pressedRingWidth="8dip"
         android:id="@+id/b1"
