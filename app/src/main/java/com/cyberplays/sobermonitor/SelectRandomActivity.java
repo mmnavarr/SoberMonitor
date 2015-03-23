@@ -5,10 +5,12 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.AsyncTask;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.Editable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -23,7 +25,7 @@ public class SelectRandomActivity extends ActionBarActivity {
 
 
     private Button range, pick;
-    private TextView num;
+    public static TextView num;
     private int rangeVal = 10;
     final Context context = this;
 
@@ -59,10 +61,10 @@ public class SelectRandomActivity extends ActionBarActivity {
                     pick.setTextColor(Color.parseColor("#33CCFF"));
                     pick.setBackgroundColor(Color.parseColor("#FFFFFF"));
 
-                    //SELECT RANDOM # BASED ON GVEN RANGE
-                    Random r = new Random();
-                    int i = r.nextInt(rangeVal) + 1;
-                    num.setText(Integer.toString(i));
+
+                    //SELECT RANDOM NUMBER ASYNC TASK - GO
+                    new selectNumberTask().execute(rangeVal);
+
 
                 } else if(event.getAction()==MotionEvent.ACTION_UP) {
                     //RETURN TO ORIGINAL STYLE
@@ -129,6 +131,78 @@ public class SelectRandomActivity extends ActionBarActivity {
         AlertDialog alert = alertDialogBuilder.create();
         // SHOW THE ALERT
         alert.show();
+    }
+
+
+    private class selectNumberTask extends AsyncTask<Integer, Integer, Void> {
+
+        @Override
+        protected void onPreExecute() {
+            Log.d("MyAsyncTask", "MyAsyncTask Started");
+        }
+
+
+        @Override
+        protected Void doInBackground(Integer... num) {
+            //INTITIALIZE RANDOM OBJECT
+            Random r = new Random();
+
+            long startTime = System.currentTimeMillis();
+
+            while (System.currentTimeMillis() - startTime <= 800) {
+                //SELECT RANDOM # BASED ON GVEN RANGE
+                int i = r.nextInt(num[0]) + 1;
+
+                //sleep real quick
+                try {Thread.sleep(50);} catch(Exception e){};
+
+                publishProgress(i);
+            }
+
+            while (System.currentTimeMillis() - startTime <= 1600) {
+                //SELECT RANDOM # BASED ON GVEN RANGE
+                int i = r.nextInt(num[0]) + 1;
+
+                //sleep real quick
+                try {Thread.sleep(250);} catch(Exception e){};
+
+                publishProgress(i);
+            }
+
+            while (System.currentTimeMillis() - startTime <= 2500) {
+                //SELECT RANDOM # BASED ON GVEN RANGE
+                int i = r.nextInt(num[0]) + 1;
+
+                //sleep real quick
+                try {Thread.sleep(400);} catch(Exception e){};
+
+                publishProgress(i);
+            }
+            return null;
+        }
+
+        @Override
+        protected void onProgressUpdate(Integer... values) {
+            super.onProgressUpdate(values);
+
+            SelectRandomActivity.num = (TextView) findViewById(R.id.number);
+            num.setText(Integer.toString(values[0]));
+        }
+
+        @Override
+        protected void onPostExecute(Void voids){
+            long startTime = System.currentTimeMillis();
+
+            while (System.currentTimeMillis() - startTime <= 1200) {
+                num.setVisibility(View.INVISIBLE);
+
+                //sleep real quick
+                try {Thread.sleep(400);} catch(Exception e){};
+
+                num.setVisibility(View.VISIBLE);
+            }
+        }
+
     }
 
 }
