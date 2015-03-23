@@ -63,7 +63,7 @@ public class SelectListActivity extends ActionBarActivity implements View.OnTouc
         array.add(new Person("Lucas Whereishe", 4));
         array.add(new Person("Steve Prezz", 10));
         array.add(new Person("Arnold Triteboy", 3));
-        array.add(new Person("Phil Weirdasshit", 2));
+        array.add(new Person("Townie Phil", 2));
         array.add(new Person("Chris Cocaine", 9));
 
         adapter = new MyAdapter(getApplicationContext(), R.layout.listview_item, array);
