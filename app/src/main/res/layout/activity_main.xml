@@ -42,7 +42,7 @@
     <at.markushi.ui.CircleButton
         android:layout_width="100dip"
         android:layout_height="100dip"
-        android:src="@drawable/mug_final"
+        android:src="@drawable/ic_beer"
         app:cb_color="#33CCFF"
         app:cb_pressedRingWidth="8dip"
         android:id="@+id/b1"
@@ -54,7 +54,7 @@
     <at.markushi.ui.CircleButton
         android:layout_width="100dip"
         android:layout_height="100dip"
-        android:src="@drawable/ic_action"
+        android:src="@drawable/ic_info"
         app:cb_color="#33CCFF"
         app:cb_pressedRingWidth="8dip"
         android:id="@+id/b2"
@@ -64,7 +64,7 @@
     <at.markushi.ui.CircleButton
         android:layout_width="100dip"
         android:layout_height="100dip"
-        android:src="@drawable/ic_action"
+        android:src="@drawable/ic_return"
         app:cb_color="#33CCFF"
         app:cb_pressedRingWidth="8dip"
         android:layout_alignTop="@+id/b2"
