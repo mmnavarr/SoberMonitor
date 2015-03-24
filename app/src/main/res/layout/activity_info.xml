@@ -3,65 +3,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:textDirection="anyRtl" >
 
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/list_select_title"
-        android:id="@+id/textView2"
+        android:id="@+id/ih1"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/it1"
+        android:gravity="center"
+        android:background="#33CCFF"
+        android:textColor="#ffffffff" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/list_select"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/textView2"
+        android:id="@+id/it1"
+        android:layout_below="@+id/ih1"
         android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/random_number_title"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/textView3"
+        android:id="@+id/ih2"
+        android:layout_below="@+id/it1"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="24dp" />
+        android:layout_marginTop="24dp"
+        android:layout_alignParentEnd="true"
+        android:gravity="center" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/random_number"
-        android:id="@+id/textView5"
-        android:layout_below="@+id/textView4"
-        android:layout_alignEnd="@+id/textView3" />
+        android:id="@+id/it2"
+        android:layout_below="@+id/ih2"
+        android:layout_alignEnd="@+id/it1" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/excel_import_title"
-        android:id="@+id/textView6"
-        android:layout_below="@+id/textView5"
+        android:id="@+id/ih3"
+        android:layout_below="@+id/it2"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="24dp" />
+        android:layout_marginTop="24dp"
+        android:layout_alignEnd="@+id/it3"
+        android:gravity="center" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/excel_import"
-        android:id="@+id/textView7"
-        android:layout_below="@+id/textView6"
-        android:layout_alignEnd="@+id/textView5" />
+        android:id="@+id/it3"
+        android:layout_below="@+id/ih3"
+        android:layout_alignEnd="@+id/it2" />
 </RelativeLayout>
