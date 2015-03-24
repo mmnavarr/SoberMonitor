@@ -18,8 +18,8 @@
         android:singleLine="true"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/h2" />
+        android:layout_above="@+id/h2"
+        android:layout_alignEnd="@+id/h2" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,8 +34,8 @@
         android:textSize="25sp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_below="@+id/h1"
-        android:layout_alignEnd="@+id/b3" />
+        android:layout_above="@+id/b1"
+        android:layout_centerHorizontal="true" />
 
     <at.markushi.ui.CircleButton
         android:layout_width="100dip"
@@ -44,8 +44,7 @@
         app:cb_color="#33CCFF"
         app:cb_pressedRingWidth="8dip"
         android:id="@+id/b1"
-        android:layout_marginLeft="15dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="25dp"
         android:layout_above="@+id/cyberplays"
         android:layout_alignStart="@+id/h2" />
 
@@ -112,6 +111,14 @@
         android:background="#33CCFF"
         android:textColor="#FFFFFF" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_mainlogo"
+        android:layout_above="@+id/h1"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/b3" />
 
 
 </RelativeLayout>
