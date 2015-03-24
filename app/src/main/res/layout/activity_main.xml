@@ -19,7 +19,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_above="@+id/h2"
-        android:layout_alignEnd="@+id/h2" />
+        android:layout_alignEnd="@+id/h2"
+        android:gravity="center" />
 
     <TextView
         android:layout_width="wrap_content"
