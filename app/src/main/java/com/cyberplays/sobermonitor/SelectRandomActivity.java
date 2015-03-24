@@ -138,7 +138,7 @@ public class SelectRandomActivity extends ActionBarActivity {
 
         @Override
         protected void onPreExecute() {
-            Log.d("MyAsyncTask", "MyAsyncTask Started");
+            Log.d("MyAsyncTask", "onPreExecute() called");
         }
 
 
@@ -191,16 +191,7 @@ public class SelectRandomActivity extends ActionBarActivity {
 
         @Override
         protected void onPostExecute(Void voids){
-            long startTime = System.currentTimeMillis();
-
-            while (System.currentTimeMillis() - startTime <= 1200) {
-                num.setVisibility(View.INVISIBLE);
-
-                //sleep real quick
-                try {Thread.sleep(400);} catch(Exception e){};
-
-                num.setVisibility(View.VISIBLE);
-            }
+            Log.d("MyAsyncTask", "onPostExecute() called");
         }
 
     }
