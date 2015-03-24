@@ -23,6 +23,10 @@
     <string name="dummyname">John Smith</string>
     <string name="dummymult">x4</string>
 
+    <string name="list_select">The list select feature allows the user to input individuals and select a frequency. The higher the frequency, the higher the change of being selected.</string>
+    <string name="random_number">The random number feature allows the user to choose a sober monitor based on an algorithm that selects a random integer within the chosen range. Each person is assigned a number, and if their value matches what appears they are the sober monitor!</string>
+    <string name="excel_import">Users are prompted to import pre-made excel files in order to quickly assign sober monitors. For information on proper formatting, please visit: www.cyberplays.com</string>
+
     <string name="number">0</string>
     <string name="range">RANGE</string>
     <string name="numbersel">SELECT</string>
