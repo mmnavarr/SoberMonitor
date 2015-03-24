@@ -116,9 +116,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
         android:src="@drawable/ic_mainlogo"
-        android:layout_above="@+id/h1"
         android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/b3" />
+        android:layout_above="@+id/h1"
+        android:layout_toEndOf="@+id/b1" />
 
 
 </RelativeLayout>
