@@ -64,12 +64,12 @@ public class SelectListActivity extends ActionBarActivity implements View.OnTouc
         array.add(new Person("Steve Prezz", 10));
         array.add(new Person("Arnold Triteboy", 3));
         array.add(new Person("Townie Phil", 2));
-        array.add(new Person("Chris Cocaine", 9));
+        array.add(new Person("Sexually Frustrated Chris Cocaine", 9));
 
         adapter = new MyAdapter(getApplicationContext(), R.layout.listview_item, array);
-        //AlphaInAnimationAdapter animationAdapter = new AlphaInAnimationAdapter(adapter);
-        //animationAdapter.setAbsListView(mListView);
-        mListView.setAdapter(adapter);
+        AlphaInAnimationAdapter animationAdapter = new AlphaInAnimationAdapter(adapter);
+        animationAdapter.setAbsListView(mListView);
+        mListView.setAdapter(animationAdapter);
         //mListView.enableDragAndDrop();
         mListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
