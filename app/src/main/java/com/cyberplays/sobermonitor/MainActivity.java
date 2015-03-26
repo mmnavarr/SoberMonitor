@@ -20,7 +20,7 @@ import android.widget.TextView;
 public class MainActivity extends Activity {
 
     private TextView h1, h2, bl1, bl2, bl3;
-    private at.markushi.ui.CircleButton b1, b2, b3;
+    private at.markushi.ui.CircleButton b1, b2, b3, b4;
 
 
     @Override
@@ -81,6 +81,18 @@ public class MainActivity extends Activity {
         });
         bl3 = (TextView) findViewById(R.id.bl3);
         bl3.setTypeface(tf);
+
+        //BUTTON 4
+        b4 = (at.markushi.ui.CircleButton) findViewById(R.id.b4);
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Log.d("Button DEBUG", "b4");
+                Intent i = new Intent(MainActivity.this, InfoActivity.class);
+                startActivity(i);
+            }
+        });
+
 
         TextView cp = (TextView) findViewById(R.id.cyberplays);
         cp.setText(Html.fromHtml("<a href=\"http://www.cyberplays.com\">CyberPlays</a>"));

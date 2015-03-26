@@ -1,11 +1,17 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="16dp"
     android:paddingTop="0dp"
     android:textDirection="anyRtl"
-    android:background="#ff989898">
+    android:background="@color/background_material_dark">
 
 
     <TextView
@@ -33,12 +39,16 @@
         android:layout_below="@+id/ih1"
         android:layout_centerHorizontal="true"
         android:layout_alignParentEnd="false"
-        android:background="#ff989898"
+        android:background="#ff303030"
         android:textColor="#ffffff"
         android:textStyle="italic"
-        android:paddingEnd="0dp"
+        android:paddingEnd="10dp"
         android:paddingBottom="10dp"
-        android:layout_alignParentTop="false" />
+        android:layout_alignParentTop="false"
+        android:paddingStart="10dp"
+        android:phoneNumber="false"
+        android:autoText="true"
+        android:gravity="center" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -64,11 +74,13 @@
         android:layout_below="@+id/ih2"
         android:layout_alignEnd="@+id/it1"
         android:paddingTop="10dp"
-        android:background="#ff989898"
+        android:background="#ff303030"
         android:textColor="#ffffff"
         android:textStyle="italic"
-        android:paddingEnd="0dp"
-        android:paddingBottom="10dp" />
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="10dp"
+        android:gravity="center" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -95,9 +107,17 @@
         android:layout_below="@+id/ih3"
         android:layout_alignEnd="@+id/it2"
         android:paddingTop="10dp"
-        android:background="#ff989898"
+        android:background="#ff303030"
         android:textColor="#ffffff"
         android:linksClickable="true"
         android:textStyle="italic"
-        android:paddingEnd="10dp" />
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:autoText="true"
+        android:gravity="center" />
+
+
+
+
 </RelativeLayout>
+    </ScrollView>

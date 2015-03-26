@@ -9,18 +9,16 @@
     android:id="@+id/main">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/app_name"
         android:id="@+id/h1"
         android:textSize="60sp"
         android:singleLine="true"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
         android:layout_above="@+id/h2"
-        android:layout_alignEnd="@+id/h2"
-        android:gravity="center" />
+        android:gravity="center"
+        android:textAlignment="gravity" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -41,7 +39,7 @@
     <at.markushi.ui.CircleButton
         android:layout_width="100dip"
         android:layout_height="100dip"
-        android:src="@drawable/ic_beer"
+        android:src="@drawable/ic_account"
         app:cb_color="#33CCFF"
         app:cb_pressedRingWidth="8dip"
         android:id="@+id/b1"
@@ -52,7 +50,7 @@
     <at.markushi.ui.CircleButton
         android:layout_width="100dip"
         android:layout_height="100dip"
-        android:src="@drawable/ic_info"
+        android:src="@drawable/ic_cake_new_event"
         app:cb_color="#33CCFF"
         app:cb_pressedRingWidth="8dip"
         android:id="@+id/b2"
@@ -116,10 +114,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
-        android:src="@drawable/ic_mainlogolrg"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/h1" />
+        android:layout_above="@+id/h1"
+        android:src="@drawable/ic_sobermonitorlogo" />
+
+    <view
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="at.markushi.ui.CircleButton"
+        android:id="@+id/b4"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/h2"
+        android:src="@drawable/ic_info_small" />
 
 
 </RelativeLayout>
